@@ -164,14 +164,3 @@ li a:hover {
     position: absolute;
     z-index: 1;
 }
-
-#summary{
-    color: rgb(57,108,144);
-    font-size: 200%;
-    font-weight: 100;
-}
-
-#viewInStore{
-    color: rgb(57,108,144);
-    font-size: 200%;
-    }
