@@ -8,57 +8,7 @@
         
     <script>
         
-        function openNav() {
-            document.getElementById("navigationTab").style.height = "100%";
-        }
-    
-        function closeNav() {
-            document.getElementById("navigationTab").style.height = "0%";
-        }
-    
-        function menuButtonPressed(x) {
-            
-            x.classList.toggle("change");
-            
-            if (x.classList.contains("change")){
-                openNav();
-            }
-            else{
-                closeNav();
-            }
-            
-        }
-    
-        function init(){
-            resize();
-            processUrlVars();
-        }
-    
-        function processUrlVars(){
-            var elementName = getUrlVars()["element"];
-            document.getElementById(elementName).style.color = 'orange';
-            document.getElementById(elementName + "Tab").style.color = 'orange';
-        }
-    
-        function resize(){
-            var w = window.innerWidth;
-            if (w > 1000){
-                document.getElementById("menuButton").classList.add("noneElement");
-                document.getElementById("menuBar").classList.remove("noneElement");
-            }
-            else{
-                document.getElementById("menuButton").classList.remove("noneElement");
-                document.getElementById("menuBar").classList.add("noneElement");
-            }
-        }
-    
-        function getUrlVars() {
-            var vars = {};
-            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-                vars[key] = value;
-            });
-            return vars;
-        }
+        
     
     </script>
         
@@ -66,34 +16,7 @@
 
 <body onresize="resize()" onload="init()">
 
-    <div class="menuButton noneElement" onclick="menuButtonPressed(this)" id="menuButton">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
 
-    <ul class="menuBar noneElement" id="menuBar">
-        <li><a id="home" href="https://interactiveforms2.oleitersdorf.com/">Home</a></li>
-        <li><a id="help" href="https://interactiveforms2.oleitersdorf.com/help/">Help</a></li>
-        <li><a id="privacy" href="https://interactiveforms2.oleitersdorf.com/privacy-policy/">Privacy Policy</a></li>
-        <li><a id="terms" href="https://interactiveforms2.oleitersdorf.com/terms-of-service/">Terms of Service</a></li>
-        <li><a id="contact" href="https://interactiveforms2.oleitersdorf.com/contact/">Contact</a></li>
-    </ul>
-    
-    <div id="navigationTab" class="overlay">
-        <div class="overlay-content">
-            <a id="homeTab" href="https://interactiveforms2.oleitersdorf.com/">Home</a>
-            <hr>
-            <a id="helpTab" href="https://interactiveforms2.oleitersdorf.com/help/">Help</a>
-            <hr>
-            <a id="privacyTab" href="https://interactiveforms2.oleitersdorf.com/privacy-policy/">Privacy Policy</a>
-            <hr>
-            <a id="termsTab" href="https://interactiveforms2.oleitersdorf.com/terms-of-service/">Terms of Service</a>
-            <hr>
-            <a id="contactTab" href="https://interactiveforms2.oleitersdorf.com/contact/">Contact</a>
-            <hr>
-        </div>
-    </div>
 
 </body>
 
