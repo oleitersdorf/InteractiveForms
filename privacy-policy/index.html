@@ -21,7 +21,23 @@
         <link rel="apple-touch-icon" href="https://interactiveforms2.oleitersdorf.com/images/favicon-ios.png" />
         
         <link rel="stylesheet" type="text/css" href="https://interactiveforms2.oleitersdorf.com/style.css">
-            
+          
+          
+      <style>
+          
+          h2{
+              color: rgb(57,108,144);
+              font-size: 200%;
+              font-weight: 100;
+          }
+      
+          p{
+              color: rgb(33,33,33);
+              font-size: 100%;
+              font-weight: 100;
+          }
+      
+          </style>
     </head>
     
     <body onresize="resize()" onload="init()">
@@ -66,6 +82,37 @@
         </div>
         
         <div class="content">
+            
+            <h2>1. What information is collected?</h2>
+
+            <p>
+            The application does not transfer any information, neither user data nor content, outside of the Google's servers. The application only stores data, in Google's servers, necessary to the operation of the program. The data stored consists of the template presentation, and the current output presentation. Form responses or information in Google Slides are not stored within the add on and are not processed or collected.
+            </p>
+            
+            <hr>
+            
+            <h2>2. What Google Services does the application access?</h2>
+            
+            <p><span style="font-weight:bold">Google Forms</span> - The Add On uses the Google Forms service to access responses as they come in and forward them to the output presentation. The Service is also used to provide a User Interface with controls over the application built into the Google Forms interface.
+            <br>
+            <span style="font-weight:bold">Google Slides</span> - The Add On uses the Google Slides service to create presentations within your google account, only while you are interfacing with the application. The only Google Slides accessed by the application are the current template and current output presentations.
+            <br>
+            <span style="font-weight:bold">Google Scripts</span> - The Add On uses the Scripts Service to create a trigger which allows for the application to be notified when responses are submitted to Google Forms which are associated with the application (an output presentation was created from within the form.) The trigger allows for the application to update the Google Slides live as responses are submitted.
+            <br>
+            <span style="font-weight:bold">Google UI</span> - The Add On populates a menu within the Google Forms User Interface, which allows for the control of the application with regards to the creation of templates and output presentations.
+            </p>
+            
+            <hr>
+            
+            <h2>3. Can the application harm my files?</h2>
+            
+            <p>The application does not access any of your files that are not in relation to the add on, and attempts to not harm any presentations created with the application. Previous output presentations and templates are not accessed by the application, only the current Google Slides (template and output) are accessed.</p>
+            
+            <hr>
+            
+            <h2>4. Who can I contact with questions?</h2>
+            
+            <p>You can use the Google Form available in the Contact Us  page, or contact the developer at ol.leitersdorf@gmail.com.</p>
             
         </div>
             
